@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Your Factors:</h2>
+
+    <p>Does <%= @x %> mirror <%= String.reverse(@x) %> ?</p>
+    <p><%= case @y do
+             true -> "yes"
+             false -> "no" end%></p>
+  </div>
+</div>
